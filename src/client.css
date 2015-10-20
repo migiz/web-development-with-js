@@ -4,5 +4,23 @@ h1 {
     color: $red
 }
 
+.testi {
 
+    padding: 20px;
 
+    background-color: teal;
+
+    button {
+        margin-left: 50px;
+    }
+}
+
+.ruma {
+
+    color: blue;
+
+    font-size: 200px;
+
+    float: right;
+
+}
