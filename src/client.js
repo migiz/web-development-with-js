@@ -15,8 +15,8 @@ import CardPage from './components/CardPage';
 
 const Routes = (
     <Router>
-        <Route path="/" component={HelloWorldApp}>
-            <IndexRoute component={FrontPage} />
+        <Route path="/" component={CardApp}>
+            <IndexRoute component={CardPage} />
             <Route path="/hello/:name" component={GreeterPage}></Route>
         </Route>
     </Router>

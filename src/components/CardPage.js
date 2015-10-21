@@ -14,12 +14,14 @@ const CardPage = React.createClass({
 
         const { cards } = this.props;
 
+//<CardApp key={i} card={card}/>
+
         return (
 
             <div>
 
-                {cards.map((card, i) =>
-                    <CardBrowser key={i} card={card}/>
+                {cards.Basic.map((card, i) =>
+                    i
                 )}
 
             </div>
