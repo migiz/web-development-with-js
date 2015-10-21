@@ -10,6 +10,9 @@ import GreeterPage from './components/GreeterPage';
 import HelloWorldApp from './components/HelloWorldApp';
 import FrontPage from './components/FrontPage';
 
+import CardApp from './components/CardApp';
+import CardPage from './components/CardPage';
+
 const Routes = (
     <Router>
         <Route path="/" component={HelloWorldApp}>
