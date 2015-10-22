@@ -1,8 +1,6 @@
 import { Router, Route, Link, IndexRoute } from 'react-router';
 import React from 'react';
-import HelloWorld from './HelloWorld';
-import Counter from './Counter';
-import Counterizer from './Counterizer';
+import { default as I, List, Map, Range, Repeat } from 'immutable';
 
 import CardApp from './CardApp';
 
@@ -10,23 +8,21 @@ const CardPage = React.createClass({
 
     render: function() {
 
-        console.log(this.props);
-
         const { cards } = this.props;
-
-//<CardApp key={i} card={card}/>
+        let cardList = List(cards);
+        console.log(cardList);
 
         return (
 
-            <div>
+            <li>
 
-                {cards.Basic.map((card, i) =>
-                    i
+                {cards.map((card, i) =>
+                    card.name
                 )}
 
-            </div>
+            </li>
         );
-    }
+    },
 
 });
 

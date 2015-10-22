@@ -1,5 +1,8 @@
 import React from 'react';
 import api from '../api';
+import FirebaseManager from '../FirebaseManager';
+
+var Firebase = require("firebase");
 
 const CardApp = React.createClass({
 
