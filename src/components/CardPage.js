@@ -10,7 +10,6 @@ const CardPage = React.createClass({
 
         const { cards } = this.props;
         let cardList = List(cards);
-        console.log(cardList);
 
         return (
 
