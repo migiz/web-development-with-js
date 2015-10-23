@@ -6,7 +6,6 @@ import CardApp from './CardApp';
 const Filter = React.createClass({
 
     filterTrigger() {
-    // sending the new filter value to the parent component
     this.props.filterUpdate(this.refs.filterInput.getDOMNode().value);
   },
   render() {
@@ -16,7 +15,6 @@ const Filter = React.createClass({
           type='text'
           ref='filterInput'
           placeholder='Type to filter..'
-          /* binding the input value to state */
           value={this.props.filterVal}
           onChange={this.filterTrigger}
         />

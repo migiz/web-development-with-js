@@ -1,4 +1,4 @@
-import './client1.styl';
+import './client.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -14,14 +14,14 @@ import CardApp from './components/CardApp';
 import CardPage from './components/CardPage';
 import App from './components/App';
 import api from './api';
-
-const data = api.getCards();
+import DetailsPage from './components/DetailsPage';
 
 const Routes = (
     <Router>
-        <Route path="/" component={App} data={data}>
+        <Route path="/" component={App}>
             <IndexRoute component={CardPage} />
             <Route path="/hello/:name" component={GreeterPage}></Route>
+            <Route path="/card/:name" component={DetailsPage}></Route>
         </Route>
     </Router>
 );
@@ -30,3 +30,5 @@ ReactDOM.render(
     Routes,
     document.getElementById('app')
 );
+
+

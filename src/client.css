@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background: #3498db;
+  margin-bottom: 2rem;
+}
+input[type='text'] {
+  margin: 1rem;
+  background: #fff;
+  font-size: 1.3rem;
+  border: none;
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  border-radius: 3px;
+  padding: 0 2rem;
+  width: calc(100% - 2rem);
+  height: 4rem;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin: 2px;
+  border-radius: 3px;
+}
+li:hover {
+  cursor: pointer;
+}
+li.minion {
+  background: #FFEFAA;
+  color: #554500;
+}
+li.minion:hover {
+  background: #554500;
+}
+li.spell {
+  background: #ABDD93;
+  color: #184A00;
+}
+li.spell:hover {
+  background: #184A00;
+}
+li.secret {
+  background: #FFAAAA;
+  color: #550000;
+}
+li.secret:hover {
+  background: #550000;
+}
+li.weapon {
+  background: #887CAF;
+  color: #13073A;
+}
+li.weapon:hover {
+  background: #13073A;
+}
+
+
+

@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import api from '../api';
 
 const CardApp = React.createClass({
@@ -36,3 +36,4 @@ const CardApp = React.createClass({
 });
 
 export default CardApp;
+*/

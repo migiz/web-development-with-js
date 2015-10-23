@@ -21,8 +21,8 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.styl$/,
-                loader: 'css-loader!stylus-loader?paths=node_modules/bootstrap-stylus/stylus/'
+                test: /\.css$/,
+                loader: 'style-loader!css-loader!postcss-loader'
             },
             {
                 test: /\.(jpe?g|png|gif)$/i,
