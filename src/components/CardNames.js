@@ -27,7 +27,7 @@ const CardNames = React.createClass({
         }
 
         return <li className={card.category} key={key}>
-            <Link to={`/card/${card.name}`}>
+            <Link to={`/card/${card.id}`}>
                 {card.name}
             </Link>
         </li>;

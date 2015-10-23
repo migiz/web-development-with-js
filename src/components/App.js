@@ -30,13 +30,15 @@ const App = React.createClass({
   render() {
     return (
       <div>
-        <header>
-          <Filter
-            filterVal={this.state.filterText}
-            filterUpdate={this.stateUpdate}
-          />
-        </header>
-        <CardNames data={this.state.cards} filter={this.state.filterText} />
+        {this.props.children && React.cloneElement(
+                    this.props.children,
+                    {
+                        cards: this.state.cards,
+                        filterText: this.state.filterText,
+                        stateUpdate: this.stateUpdate
+
+                    }
+                )}
       </div>
     )
   }

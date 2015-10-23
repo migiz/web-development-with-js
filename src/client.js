@@ -15,13 +15,14 @@ import CardPage from './components/CardPage';
 import App from './components/App';
 import api from './api';
 import DetailsPage from './components/DetailsPage';
+import FilterPage from './components/FilterPage';
 
 const Routes = (
     <Router>
         <Route path="/" component={App}>
-            <IndexRoute component={CardPage} />
-            <Route path="/hello/:name" component={GreeterPage}></Route>
-            <Route path="/card/:name" component={DetailsPage}></Route>
+            <IndexRoute component={FilterPage}/>
+
+            <Route path="/card/:id" component={DetailsPage}></Route>
         </Route>
     </Router>
 );
